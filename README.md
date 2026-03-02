@@ -11,6 +11,10 @@
 * 🎵 **타격감 200% 사운드 이펙트:** 타이핑할 때마다 경쾌한 기계식 키보드 소리가 출력되어 학습 집중력을 극대화합니다.
 * 📝 **즉석 오답노트 (메모장):** 공부하다 헷갈리는 개념이 생기면 버튼 한 번으로 윈도우 메모장을 호출하여 바로바로 기록할 수 있습니다.
 
+* <img width="1062" height="899" alt="Image" src="https://github.com/user-attachments/assets/5ffb3fb3-7263-43bf-a1ec-2b89924828e0" />
+
+<img width="1052" height="875" alt="Image" src="https://github.com/user-attachments/assets/a912cfa1-2937-4007-9ea3-18533c009260" />
+
 ## 🛠️ 설치 및 실행 방법 (How to Run)
 
 **1. 필요 환경**
@@ -21,8 +25,3 @@
 **2. 라이브러리 설치**
 ```bash
 pip install pygame
-
-
-<img width="1062" height="899" alt="Image" src="https://github.com/user-attachments/assets/5ffb3fb3-7263-43bf-a1ec-2b89924828e0" />
-
-<img width="1052" height="875" alt="Image" src="https://github.com/user-attachments/assets/a912cfa1-2937-4007-9ea3-18533c009260" />
