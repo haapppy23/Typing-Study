@@ -21,3 +21,8 @@
 **2. 라이브러리 설치**
 ```bash
 pip install pygame
+
+
+<img width="1062" height="899" alt="Image" src="https://github.com/user-attachments/assets/5ffb3fb3-7263-43bf-a1ec-2b89924828e0" />
+
+<img width="1052" height="875" alt="Image" src="https://github.com/user-attachments/assets/a912cfa1-2937-4007-9ea3-18533c009260" />
