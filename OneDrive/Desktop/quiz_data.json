@@ -1,0 +1,1022 @@
+[
+  {
+    "question": "파일과 디렉터리의 사용자 소유권과 그룹 소유권 변경 명령어는?",
+    "answer": "chown"
+  },
+  {
+    "question": "chown 명령어에서 하위 디렉터리를 포함하여 내부의 모든 파일의 소유권을 변경하는 옵션은?",
+    "answer": "-R"
+  },
+  {
+    "question": "ihd 디렉터리와 그 하위의 모든 파일의 소유권을 root로 변경하는 명령어는?",
+    "answer": "chown -R root ihd"
+  },
+  {
+    "question": "test 파일의 '소유자(User)'를 root로 변경 (예: ____ root test)",
+    "answer": "chown"
+  },
+  {
+    "question": "파일이나 디렉터리의 그룹 소유권을 변경하는 명령어는?",
+    "answer": "chgrp"
+  },
+  {
+    "question": "파일 TEST의 그룹 소유권을 totozi로 변경하는 명령어는?",
+    "answer": "chgrp totozi TEST"
+  },
+  {
+    "question": "파일 유형과 허가권(퍼미션) 등 파일의 상세 정보를 알 수 있는 명령어와 옵션 조합은?",
+    "answer": "ls -l"
+  },
+  {
+    "question": "소유자와 그룹은 읽기/쓰기(rw), 기타 사용자는 읽기(r) 권한을 가지는 '일반 파일'의 10자리 허가권 표기 문자는?",
+    "answer": "-rw-rw-r--"
+  },
+  {
+    "question": "파일이나 디렉터리의 접근 허가권을 변경하는 명령어는?",
+    "answer": "chmod"
+  },
+  {
+    "question": "TST.txt 파일에 대하여 소유자, 그룹, 기타 사용자 모두에게 읽기(r)와 쓰기(w) 권한(666)을 부여하는 명령어는?",
+    "answer": "chmod 666 TST.txt"
+  },
+  {
+    "question": "TST 디렉터리와 그 하위의 모든 파일에 대해 기타 사용자(o)에게 쓰기(w) 권한을 추가(+)하는 명령어는?",
+    "answer": "chmod -R o+w TST"
+  },
+  {
+    "question": "파일 소유자(u)의 실행(x) 권한을 제거(-)하는 명령어 조합은?",
+    "answer": "chmod u-x"
+  },
+  {
+    "question": "모든 사용자(a)에게 읽기(r)와 실행(x) 권한을 정확히 지정(=)하는 명령어 조합은?",
+    "answer": "chmod a=rx"
+  },
+  {
+    "question": "새로 생성되는 파일이나 디렉터리의 기본 허가권을 설정하는 명령어는?",
+    "answer": "umask"
+  },
+  {
+    "question": "리눅스에서 umask 적용 전, 디렉터리의 기본 최대 권한이 777이라면 일반 파일의 기본 최대 권한 숫자는?",
+    "answer": "666"
+  },
+  {
+    "question": "umask 값을 문자로 표기하여 확인하는 옵션은?",
+    "answer": "-S"
+  },
+  {
+    "question": "새로 생성되는 파일은 644, 디렉터리는 755 권한을 갖게 하려면 umask 값을 어떻게 설정해야 하는가?",
+    "answer": "umask 0022"
+  },
+  {
+    "question": "일반 사용자가 실행하더라도, 실행되는 동안에는 파일 '소유자(User)'의 권한을 임시로 가지게 하는 특수 권한은?",
+    "answer": "SetUID"
+  },
+  {
+    "question": "일반 사용자가 실행하더라도, 실행되는 동안에는 파일 '그룹(Group)'의 권한을 임시로 가지게 하는 특수 권한은?",
+    "answer": "SetGID"
+  },
+  {
+    "question": "디렉터리에 설정하며, 누구나 쓰기가 가능하지만 삭제는 파일 소유자나 관리자(root)만 가능하게 하는 특수 권한(공용 폴더용)은?",
+    "answer": "Sticky bit"
+  },
+  {
+    "question": "SetUID를 설정할 때 맨 앞에 부여하는 8진수 특수 권한 숫자 값은?",
+    "answer": "4000"
+  },
+  {
+    "question": "SetGID를 설정할 때 맨 앞에 부여하는 8진수 특수 권한 숫자 값은?",
+    "answer": "2000"
+  },
+  {
+    "question": "SetUID나 SetGID가 설정된 파일은 허가권을 확인할 때 실행(x) 권한 자리에 어떤 알파벳 문자가 표시되는가?",
+    "answer": "s"
+  },
+  {
+    "question": "SetUID가 설정되어 있어 일반 사용자도 자신의 비밀번호를 변경할 수 있게 해주는 실행 파일의 절대 경로는?",
+    "answer": "/usr/bin/passwd"
+  },
+  {
+    "question": "현재 마운트된 블록 시스템(파일 시스템)의 동적인 정보가 저장되는 파일은?",
+    "answer": "/etc/mtab"
+  },
+  {
+    "question": "부팅 시에 마운트할 파티션 정보가 기록되며, 파일 시스템의 정적 정보를 저장하는 파일은?",
+    "answer": "/etc/fstab"
+  },
+  {
+    "question": "CD-ROM 등 미디어의 마운트를 해제하고 장치를 배출(제거)하는 명령어는?",
+    "answer": "eject"
+  },
+  {
+    "question": "하드디스크 파티션 생성, 삭제, 타입 결정 등의 작업을 수행하는 명령어는?",
+    "answer": "fdisk"
+  },
+  {
+    "question": "리눅스 파일 시스템을 생성(포맷)하는 기본 명령어는?",
+    "answer": "mkfs"
+  },
+  {
+    "question": "ext2, ext3, ext4 타입의 리눅스 파일 시스템을 생성(포맷)하는 전용 명령어는?",
+    "answer": "mke2fs"
+  },
+  {
+    "question": "mkfs 명령어에서 파일 시스템 타입을 지정하는 옵션은?",
+    "answer": "-t"
+  },
+  {
+    "question": "mke2fs 명령어에서 저널링 파일 시스템인 ext3으로 생성하게 해주는 옵션은?",
+    "answer": "-j"
+  },
+  {
+    "question": "mke2fs 명령어에서 파일 시스템을 생성하기 전에 디스크의 배드 블록(Bad block)을 검사하는 옵션은?",
+    "answer": "-c"
+  },
+  {
+    "question": "mke2fs 명령어에서 파일 시스템의 블록 크기(Block size, 바이트 단위)를 지정하는 옵션은?",
+    "answer": "-b"
+  },
+  {
+    "question": "mke2fs 명령어에서 관리자(root)를 위한 예약 블록(Reserved block)의 비율(%)을 지정하는 옵션은?",
+    "answer": "-m"
+  },
+  {
+    "question": "파일 시스템의 무결성을 점검하고 대화식으로 복구하는 명령어는?",
+    "answer": "fsck"
+  },
+  {
+    "question": "fsck 명령어가 손상된 파일 조각을 연결하여 복구 작업을 진행할 때 사용하는 디렉터리는?",
+    "answer": "/lost+found"
+  },
+  {
+    "question": "ext2, ext3, ext4 타입의 파일 시스템을 점검하고 복구하는 전용 도구는?",
+    "answer": "e2fsck"
+  },
+  {
+    "question": "xfs 파일 시스템의 무결성을 점검하고 복구할 때 사용하는 도구는?",
+    "answer": "xfs_repair"
+  },
+  {
+    "question": "디렉터리나 파일별 디스크 사용량을 확인할 때 사용하는 명령어는?",
+    "answer": "du"
+  },
+  {
+    "question": "du 명령어에서 파일들의 전체 크기를 합한 총계(Summary)만 보여주는 옵션은?",
+    "answer": "-s"
+  },
+  {
+    "question": "du 명령어에서 용량 단위를 사람이 읽기 쉽게(KB, MB, GB 등) 표시하는 옵션은?",
+    "answer": "-h"
+  },
+  {
+    "question": "시스템에 마운트된 하드 디스크의 남은 용량(파티션별 사용량)을 확인할 때 사용하는 명령어는?",
+    "answer": "df"
+  },
+  {
+    "question": "df 명령어에서 해당 파티션의 파일 시스템 유형(Type)도 같이 출력하는 옵션은?",
+    "answer": "-T"
+  },
+  {
+    "question": "df 명령어에서 용량 단위를 사람이 읽기 쉽게(KB, MB, GB 등) 표시하는 옵션은?",
+    "answer": "-h"
+  },
+  {
+    "question": "df 명령어에서 0 블록의 파일 시스템을 포함하여 시스템의 모든(all) 파일 시스템을 나타내는 옵션은?",
+    "answer": "-a"
+  },
+  {
+    "question": "사용자나 그룹별로 디스크 사용량을 제한하고 현재 사용량을 확인하는 명령어는?",
+    "answer": "quota"
+  },
+  {
+    "question": "현재 하드디스크 파티션의 UUID와 파일 시스템 유형 정보를 출력하는 명령어는?",
+    "answer": "blkid"
+  },
+  {
+    "question": "시스템의 블록 장치(하드디스크, 파티션 등) 정보를 트리 형식으로 보여주는 명령어는?",
+    "answer": "lsblk"
+  },
+  {
+    "question": "파티션을 식별하기 위해 사용하는 128비트의 고유한 범용 식별자는?",
+    "answer": "UUID"
+  },
+  {
+    "question": "커널이 제공하는 현재 마운트 정보가 기록된 가상 파일은?",
+    "answer": "/proc/mounts"
+  },
+  {
+    "question": "현재 시스템에 인식된 전체 파티션 정보를 제공하는 파일은?",
+    "answer": "/proc/partitions"
+  },
+  {
+    "question": "스티븐 본이 개발한 초창기 유닉스의 기본 셸(/bin/sh)은? (한글 2글자)",
+    "answer": "본셸"
+  },
+  {
+    "question": "데이비드 콘이 본셸을 확장하여 개발한 셸(/bin/ksh)은? (한글 2글자)",
+    "answer": "콘셸"
+  },
+  {
+    "question": "GNU 프로젝트에서 개발한 리눅스 표준 셸로 POSIX와 호환 가능한 셸(/bin/bash)은? (한글 3글자)",
+    "answer": "배쉬셸"
+  },
+  {
+    "question": "Korn shell을 바탕으로 여러 셸의 기능을 모아 재작성한 셸(/bin/zsh)은? (한글 2글자)",
+    "answer": "지셸"
+  },
+  {
+    "question": "빌 조이가 C 언어 문법을 바탕으로 개발한 셸(/bin/csh)은? (한글 2글자)",
+    "answer": "C셸"
+  },
+  {
+    "question": "C셸을 확장한 것으로 BSD 계열에서 가장 많이 사용하는 셸(/bin/tcsh)은? (영문+한글)",
+    "answer": "tc셸"
+  },
+  {
+    "question": "현재 시스템에서 사용할 수 있는 적합한 셸 목록을 확인하는 파일은?",
+    "answer": "/etc/shells"
+  },
+  {
+    "question": "시스템에 등록된 사용자 계정 정보와 각 계정마다 할당된 로그인 셸을 확인하는 파일은?",
+    "answer": "/etc/passwd"
+  },
+  {
+    "question": "현재 로그인한 사용자가 사용하고 있는 셸을 환경변수를 통해 확인하는 명령어는?",
+    "answer": "echo $SHELL"
+  },
+  {
+    "question": "사용자의 기본 로그인 셸을 변경하는 명령어는?",
+    "answer": "chsh"
+  },
+  {
+    "question": "chsh 명령어에서 지정하는 셸을 로그인 셸로 변경하는 옵션은?",
+    "answer": "-s"
+  },
+  {
+    "question": "chsh 명령어에서 /etc/shells 파일 안에 기록된 변경 가능한 셸 목록을 나열하는 옵션은?",
+    "answer": "-l"
+  },
+  {
+    "question": "기존 사용자 계정의 정보(홈 디렉터리, 셸 등)를 변경하는 명령어는?",
+    "answer": "usermod"
+  },
+  {
+    "question": "히스토리에서 바로 직전에 실행했던 명령문을 재실행하는 기호는?",
+    "answer": "!!"
+  },
+  {
+    "question": "히스토리 목록에서 n번째 명령어를 실행하는 기호는?",
+    "answer": "!n"
+  },
+  {
+    "question": "현재 명령행 위치에서 n 개수만큼 빼서 이전 행에 있는 명령어 실행하는 기호는?",
+    "answer": "!-n"
+  },
+  {
+    "question": "히스토리에서 가장 최근에 특정 문자열(string)로 '시작'하는 명령문을 찾아 실행하는 기호는?",
+    "answer": "!string"
+  },
+  {
+    "question": "히스토리에서 마지막 명령에 사용된 '마지막 인자(argument)'를 나타내는 기호는?",
+    "answer": "!$"
+  },
+  {
+    "question": "히스토리에서 마지막으로 실행된 명령에 사용된 '모든 인자(argument)'를 나타내는 기호는?",
+    "answer": "!*"
+  },
+  {
+    "question": "히스토리에서 가장 최근에 특정 문자열(string)을 '포함'하고 있는 명령문을 실행하는 기호는?",
+    "answer": "!?string?"
+  },
+  {
+    "question": "현재 셸 메모리에 저장되는 히스토리 스택의 크기(개수)를 지정하는 환경변수는?",
+    "answer": "HISTSIZE"
+  },
+  {
+    "question": "히스토리 기록이 저장되는 파일의 물리적 위치를 지정하는 환경변수는?",
+    "answer": "HISTFILE"
+  },
+  {
+    "question": "물리적인 히스토리 파일(.bash_history)의 최대 크기를 지정하는 환경변수는?",
+    "answer": "HISTFILESIZE"
+  },
+  {
+    "question": "히스토리 명령어 수행 시간을 출력할 때의 형식을 지정하는 환경변수는?",
+    "answer": "HISTTIMEFORMAT"
+  },
+  {
+    "question": "히스토리에 중복되는 명령어에 대한 기록 유무를 지정하는 환경변수는?",
+    "answer": "HISTCONTROL"
+  },
+  {
+    "question": "리눅스 시스템이 부팅 시 자동으로 실행되어 사용자의 요청을 기다리는 백그라운드 프로세스는?",
+    "answer": "Daemon"
+  },
+  {
+    "question": "서비스 요청이 들어오기 전에도 항상 메모리에 상주하며 빠르게 응답하는 단독 실행 데몬 방식은?",
+    "answer": "standalone"
+  },
+  {
+    "question": "다른 데몬들의 상위에 존재하여 네트워크 요청을 대신 받아주는 슈퍼 데몬은? (커널 2.4 이후 xinetd가 역할 수행)",
+    "answer": "inetd 데몬"
+  },
+  {
+    "question": "평소에는 메모리에 없다가, inetd 데몬에 의해 요청이 올 때만 활성화되어 서비스를 제공하는 데몬 방식은?",
+    "answer": "inetd 타입 데몬"
+  },
+  {
+    "question": "시그널 번호 1번으로, 터미널과 연결이 끊어졌을 때 발생하며 프로세스의 설정 파일을 다시 읽어 재시작할 때 사용하는 시그널은?",
+    "answer": "SIGHUP"
+  },
+  {
+    "question": "시그널 번호 2번으로, 사용자가 Ctrl+C를 입력했을 때 발생하며 프로세스를 종료하는 시그널은?",
+    "answer": "SIGINT"
+  },
+  {
+    "question": "시그널 번호 3번으로, 사용자가 Ctrl+\\를 입력했을 때 발생하며 코어 덤프를 남기고 종료하는 시그널은?",
+    "answer": "SIGQUIT"
+  },
+  {
+    "question": "시그널 번호 9번으로, 프로세스를 강제로 무조건 종료시키는 시그널은?",
+    "answer": "SIGKILL"
+  },
+  {
+    "question": "시그널 번호 15번으로, kill 명령어 수행 시 기본으로 전송되는 정상 종료 시그널은?",
+    "answer": "SIGTERM"
+  },
+  {
+    "question": "시그널 번호 18번으로, 정지(대기)된 프로세스를 다시 실행시키는 시그널은?",
+    "answer": "SIGCONT"
+  },
+  {
+    "question": "시그널 번호 19번으로, 프로세스를 일시 정지시키며 무시할 수 없는 시그널은?",
+    "answer": "SIGSTOP"
+  },
+  {
+    "question": "시그널 번호 20번으로, 사용자가 Ctrl+Z를 입력했을 때 프로세스를 백그라운드 대기 상태로 전환하는 시그널은?",
+    "answer": "SIGTSTP"
+  },
+  {
+    "question": "현재 대기 중이거나 백그라운드에서 실행 중인 프로세스 작업을 백그라운드 작업으로 계속 진행시키는 명령어는?",
+    "answer": "bg"
+  },
+  {
+    "question": "포그라운드(fg)에서 실행 중인 작업을 잠시 멈추고 백그라운드(bg)로 보내기 위해 누르는 단축키는?",
+    "answer": "Ctrl+Z"
+  },
+  {
+    "question": "백그라운드에서 실행 중이거나 대기 중인 작업을 다시 포그라운드(화면 앞)로 가져오는 명령어는?",
+    "answer": "fg"
+  },
+  {
+    "question": "kill 명령어에서 시스템에서 사용할 수 있는 전체 시그널 종류를 나열하는 옵션은?",
+    "answer": "-l"
+  },
+  {
+    "question": "kill 명령어에서 프로세스를 강제로 종료(SIGKILL)하기 위해 사용하는 번호 옵션은?",
+    "answer": "-9"
+  },
+  {
+    "question": "리눅스 시스템의 전반적인 운영 상태와 CPU, 메모리, 프로세스 상태를 실시간으로 모니터링하는 명령어는?",
+    "answer": "top"
+  },
+  {
+    "question": "터미널 세션이 끊어지거나 사용자가 로그아웃해도 프로세스가 중단되지 않고 백그라운드에서 작업을 계속 수행하게 하는 명령어는?",
+    "answer": "nohup"
+  },
+  {
+    "question": "source.tar 파일을 /opt/src에 해제하는 작업을 로그아웃 후에도 백그라운드로 처리하기 위한 명령어 조합은?",
+    "answer": "nohup tar xvf source.tar -C /opt/src &"
+  },
+  {
+    "question": "주기적으로 반복되는 예약 작업을 수행하는 데몬으로, /etc/crontab 파일과 관련된 것은?",
+    "answer": "cron"
+  },
+  {
+    "question": "crontab 설정에서 '매주 일요일과 월요일 오전 4시 정각에 /etc/backup.sh를 실행'하도록 하는 시간 표기법은?",
+    "answer": "0 4 * * 0,1"
+  },
+  {
+    "question": "셸의 명령행에서 커서를 줄의 맨 앞으로 이동시키는 단축키는?",
+    "answer": "Ctrl+A"
+  },
+  {
+    "question": "셸의 명령행에서 커서를 줄의 맨 뒤로 이동시키는 단축키는?",
+    "answer": "Ctrl+E"
+  },
+  {
+    "question": "vi 편집기나 명령행 히스토리 등에서 커서를 한 줄 아래(Next)로 이동시키는 단축키는?",
+    "answer": "Ctrl+N"
+  },
+  {
+    "question": "콘솔에서 화면 출력을 잠시 멈추거나, 커서 아랫부분에서 문자열을 검색할 때 사용하는 단축키는?",
+    "answer": "Ctrl+S"
+  },
+  {
+    "question": "콘솔에서 화면 출력을 다시 시작하거나, 히스토리에서 역방향(윗부분)으로 문자열을 검색할 때 사용하는 단축키는?",
+    "answer": "Ctrl+R"
+  },
+  {
+    "question": "vi 편집기처럼 입력 모드, 명령 모드, ex 명령 모드(마지막 행 모드)로 나뉘어 있는 편집기를 뜻하는 용어는?",
+    "answer": "모드형 편집기"
+  },
+  {
+    "question": "vi 편집기 마지막 행 모드에서 버퍼의 내용을 파일에 기록(저장)하고 종료하는 명령어는?",
+    "answer": "wq"
+  },
+  {
+    "question": "vi 편집기 마지막 행 모드에서 버퍼의 내용을 파일에 기록하지 않고 강제로 종료하는 명령어는?",
+    "answer": "q!"
+  },
+  {
+    "question": "vi 편집기 마지막 행 모드에서 내용이 변경되지 않았을 때 그냥 종료하는 명령어는?",
+    "answer": "q"
+  },
+  {
+    "question": "vi 편집기 마지막 행 모드에서 문서의 각 줄에 줄 번호를 표시하는 설정 명령어는?",
+    "answer": "set nu"
+  },
+  {
+    "question": "vi 편집기 마지막 행 모드에서 문서의 줄 번호 표시 설정을 해제하는 명령어는?",
+    "answer": "set nonu"
+  },
+  {
+    "question": "vi 편집기 명령 모드에서 현재 커서가 있는 한 라인을 삭제(잘라내기)하는 키는?",
+    "answer": "dd"
+  },
+  {
+    "question": "vi 편집기 명령 모드에서 현재 커서가 있는 한 라인을 복사하는 키는?",
+    "answer": "yy"
+  },
+  {
+    "question": "vi 편집기 명령 모드에서 복사나 잘라내기 한 내용을 현재 커서의 '윗줄'에 붙여넣기 하는 키는?",
+    "answer": "P"
+  },
+  {
+    "question": "vi 편집기 명령 모드에서 복사나 잘라내기 한 내용을 현재 커서의 '아랫줄'에 붙여넣기 하는 키는?",
+    "answer": "p"
+  },
+  {
+    "question": "rpm 명령어에서 새로운 패키지를 설치할 때 사용하는 기본 옵션은?",
+    "answer": "-i"
+  },
+  {
+    "question": "rpm 명령어에서 패키지를 설치하되 이미 설치되어 있다면 기존 버전을 업그레이드하는 옵션은?",
+    "answer": "-U"
+  },
+  {
+    "question": "rpm 명령어에서 설치된 패키지를 삭제(Erase)하는 옵션은?",
+    "answer": "-e"
+  },
+  {
+    "question": "rpm 명령어에서 패키지 설치/삭제 시 의존성(Dependency) 관계를 무시하고 강제 진행하는 옵션은?",
+    "answer": "--nodeps"
+  },
+  {
+    "question": "rpm 명령어에서 기존에 설치된 패키지와 관계없이 강제로 덮어써서 설치하는 옵션은?",
+    "answer": "--force"
+  },
+  {
+    "question": "dpkg 명령어에서 설치된 데비안 패키지(설정 파일 제외)만 삭제하는 옵션은?",
+    "answer": "-r"
+  },
+  {
+    "question": "dpkg 명령어에서 데비안 패키지와 그와 관련된 설정 파일 정보까지 모두 완전히 삭제(Purge)하는 옵션은?",
+    "answer": "-P"
+  },
+  {
+    "question": "dpkg 명령어에서 특정 패키지의 설치 상태와 상세 정보를 확인하는 옵션은?",
+    "answer": "-s"
+  },
+  {
+    "question": "dpkg 명령어에서 특정 패키지가 시스템에 설치한 모든 파일의 목록을 확인하는 옵션은?",
+    "answer": "-L"
+  },
+  {
+    "question": "tar 명령어에서 아카이브 파일 안에 묶여 있는 파일 목록을 해제하지 않고 나열하여 확인만 하는 옵션은?",
+    "answer": "t"
+  },
+  {
+    "question": "tar 명령어에서 gzip 압축 방식을 사용하여 묶거나 해제하도록 지정하는 옵션은?",
+    "answer": "z"
+  },
+  {
+    "question": "tar 명령어에서 bzip2 압축 방식을 사용하여 묶거나 해제하도록 지정하는 옵션은?",
+    "answer": "j"
+  },
+  {
+    "question": "tar 명령어에서 xz 압축 방식을 사용하여 묶거나 해제하도록 지정하는 옵션은?",
+    "answer": "J"
+  },
+  {
+    "question": "과거 유닉스 환경에서 주로 사용되었으며, 확장자가 .Z인 압축 파일을 생성하는 명령어는?",
+    "answer": "compress"
+  },
+  {
+    "question": "GNU 프로젝트에서 만들어졌으며 가장 널리 쓰이는, 확장자가 .gz인 압축 파일을 생성하는 명령어는?",
+    "answer": "gzip"
+  },
+  {
+    "question": "블록 정렬 알고리즘을 사용해 압축률이 높으며, 확장자가 .bz2인 압축 파일을 생성하는 명령어는?",
+    "answer": "bzip2"
+  },
+  {
+    "question": "LZMA 알고리즘을 사용해 가장 압축률이 뛰어나며, 확장자가 .xz인 압축 파일을 생성하는 명령어는?",
+    "answer": "xz"
+  },
+  {
+    "question": "소스 코드 컴파일 설치 시, 시스템 환경을 검사하고 makefile을 생성하기 위해 실행하는 스크립트는?",
+    "answer": "./configure"
+  },
+  {
+    "question": "소스 코드 컴파일 단계에서, 생성된 makefile을 바탕으로 실제 소스 코드를 컴파일하여 실행 파일을 만드는 명령어는?",
+    "answer": "make"
+  },
+  {
+    "question": "컴파일이 완료된 실행 파일과 관련 파일들을 시스템의 올바른 디렉터리에 복사하여 설치하는 명령어는?",
+    "answer": "make install"
+  },
+  {
+    "question": "멀티 플랫폼을 지원하며, 리눅스뿐만 아니라 윈도우 환경에서도 사용할 수 있는 make의 대용품 프로젝트는?",
+    "answer": "CMake"
+  },
+  {
+    "question": "BSD 계열 시스템(CUPS)에서 문서 프린트 작업을 요청하는 명령어는?",
+    "answer": "lpr"
+  },
+  {
+    "question": "BSD 계열 시스템(CUPS)에서 현재 프린터 큐에 대기 중인 작업 목록 상태를 출력하는 명령어는?",
+    "answer": "lpq"
+  },
+  {
+    "question": "BSD 계열 시스템(CUPS)에서 프린터 큐에 대기 중인 인쇄 작업을 취소(삭제)하는 명령어는?",
+    "answer": "lprm"
+  },
+  {
+    "question": "BSD 계열 시스템에서 프린터 데몬을 제어하고 라인 프린터를 관리하는 컨트롤 프로그램 명령어는?",
+    "answer": "lpc"
+  },
+  {
+    "question": "System V 계열 시스템에서 문서 프린트 작업을 요청하는 명령어는?",
+    "answer": "lp"
+  },
+  {
+    "question": "System V 계열 시스템에서 프린터 큐의 상태를 확인하는 명령어는?",
+    "answer": "lpstat"
+  },
+  {
+    "question": "System V 계열 시스템에서 프린트 대기 작업을 취소하는 명령어는?",
+    "answer": "cancel"
+  },
+  {
+    "question": "X 윈도우 환경에서 클라이언트 애플리케이션 개발을 위해 기본적으로 사용되는 가장 오래된 C 언어 라이브러리는?",
+    "answer": "Xlib"
+  },
+  {
+    "question": "X 윈도우 환경에서 구조가 복잡한 Xlib을 대체하기 위해 등장한 현대적인 C 언어 바인딩 라이브러리는?",
+    "answer": "XCB"
+  },
+  {
+    "question": "IBM PC 호환 시스템을 위한 X 서버 프로젝트로, 과거 리눅스의 기본 X 서버 역할을 담당했던 것은?",
+    "answer": "XFree86"
+  },
+  {
+    "question": "원격지 컴퓨터로 X 윈도우 화면을 전송하기 위해 사용할 IP 주소와 화면 번호를 환경변수로 설정하는 명령어 형식은?",
+    "answer": "export DISPLAY=IP주소"
+  },
+  {
+    "question": "QT 라이브러리를 기반으로 제작되었으며, Kwin 윈도우 매니저를 사용하는 대표적인 데스크톱 환경은?",
+    "answer": "KDE"
+  },
+  {
+    "question": "GTK+ 라이브러리를 바탕으로 GNU 프로젝트에서 개발했으며, Mutter, Metacity 등을 윈도우 매니저로 사용하는 데스크톱 환경은?",
+    "answer": "GNOME"
+  },
+  {
+    "question": "GNOME 데스크톱 환경의 기본 디스플레이 매니저(로그인 화면 제공 프로그램)는?",
+    "answer": "GDM"
+  },
+  {
+    "question": "KDE 데스크톱 환경의 기본 디스플레이 매니저(로그인 화면 제공 프로그램)는?",
+    "answer": "KDM"
+  },
+  {
+    "question": "IP 주소나 호스트명을 기반으로 X 서버에 접속할 수 있는 클라이언트를 지정하거나 해제하는 명령어는?",
+    "answer": "xhost"
+  },
+  {
+    "question": "MMC(Magic Cookie) 방식을 이용해 X 서버 접속 인증에 사용되는 권한 정보를 설정하거나 관리하는 명령어는?",
+    "answer": "xauth"
+  },
+  {
+    "question": "현재 환경 변수에 설정된 DISPLAY 장치와 관련된 xauth 권한 부여 정보 리스트를 확인하는 명령어 조합은?",
+    "answer": "xauth list $DISPLAY"
+  },
+  {
+    "question": "사설 IP 대역 중 10.0.0.0 ~ 10.255.255.255 범위를 가지는 클래스는?",
+    "answer": "Class A"
+  },
+  {
+    "question": "사설 IP 대역 중 172.16.0.0 ~ 172.31.255.255 범위를 가지는 클래스는?",
+    "answer": "Class B"
+  },
+  {
+    "question": "사설 IP 대역 중 192.168.0.0 ~ 192.168.255.255 범위를 가지는 클래스는?",
+    "answer": "Class C"
+  },
+  {
+    "question": "OSI 7계층 중 사용자와 네트워크 간의 인터페이스 역할을 하며, 게이트웨이가 동작하고 전송 단위로 '메시지'를 사용하는 최상위 계층은?",
+    "answer": "응용 계층"
+  },
+  {
+    "question": "OSI 7계층 중 데이터의 부호화, 데이터 압축, 암호화 등의 기능을 담당하는 계층은?",
+    "answer": "표현 계층"
+  },
+  {
+    "question": "OSI 7계층 중 통신하는 종단 간 어플리케이션들의 연결을 설정, 유지, 해제하는 역할을 하는 계층은?",
+    "answer": "세션 계층"
+  },
+  {
+    "question": "OSI 7계층 중 종단 간(End to End) 신뢰성 있는 연결을 제공하며 TCP/UDP 프로토콜이 동작하는 계층은?",
+    "answer": "전송 계층"
+  },
+  {
+    "question": "OSI 7계층 중 논리적인 주소(IP)를 사용하여 경로 관리 및 최적 경로 설정을 수행하며, 라우터가 동작하는 계층은?",
+    "answer": "네트워크 계층"
+  },
+  {
+    "question": "OSI 7계층 중 물리적 오류 검출 기능을 제공하며 브리지, 스위치가 동작하고 전송 단위로 '프레임'을 사용하는 계층은?",
+    "answer": "데이터 링크 계층"
+  },
+  {
+    "question": "OSI 7계층 중 케이블, 리피터, 허브 등이 동작하며 전기적 신호인 '비트(Bit)' 단위로 데이터를 전송하는 최하위 계층은?",
+    "answer": "물리 계층"
+  },
+  {
+    "question": "전자우편 송신에 사용되는 프로토콜로 기본 포트 번호 25번을 사용하는 것은?",
+    "answer": "SMTP"
+  },
+  {
+    "question": "서버에 도착한 전자우편을 사용자 컴퓨터로 수신(다운로드)할 때 사용하며 포트 110번을 사용하는 프로토콜은?",
+    "answer": "POP"
+  },
+  {
+    "question": "평문으로 데이터를 전송하는 원격 접속 프로토콜로 기본 포트 번호 23번을 사용하는 것은?",
+    "answer": "Telnet"
+  },
+  {
+    "question": "데이터를 암호화하여 전송하는 안전한 원격 접속 프로토콜로 기본 포트 번호 22번을 사용하는 것은?",
+    "answer": "SSH"
+  },
+  {
+    "question": "파일 전송 프로토콜로 데이터 전송에 20번, 제어 통신에 21번 포트를 사용하는 것은?",
+    "answer": "FTP"
+  },
+  {
+    "question": "웹 브라우저에서 하이퍼텍스트 문서를 전송하기 위해 사용되며 포트 80번을 사용하는 프로토콜은?",
+    "answer": "HTTP"
+  },
+  {
+    "question": "HTTP 프로토콜에 데이터 암호화(보안) 기능이 추가된 것으로 포트 443번을 사용하는 프로토콜은?",
+    "answer": "HTTPS"
+  },
+  {
+    "question": "네트워크 장비들을 중앙에서 관리하기 위한 프로토콜로 포트 161번과 162번을 사용하는 것은?",
+    "answer": "SNMP"
+  },
+  {
+    "question": "FTP보다 단순한 형태의 파일 전송 프로토콜로, 인증 과정 없이 포트 69번을 사용하는 것은?",
+    "answer": "TFTP"
+  },
+  {
+    "question": "네트워크에 접속한 컴퓨터에게 동적으로 IP 주소를 할당해 주는 프로토콜로 포트 67번, 68번을 사용하는 것은?",
+    "answer": "DHCP"
+  },
+  {
+    "question": "문자로 된 도메인 이름을 숫자로 된 IP 주소로 변환해 주는 시스템으로 포트 53번을 사용하는 것은?",
+    "answer": "DNS"
+  },
+  {
+    "question": "전자우편 수신 프로토콜 중 하나로, 서버에 접속하여 메일을 동기화하고 관리할 수 있으며 포트 143번을 사용하는 것은?",
+    "answer": "IMAP"
+  },
+  {
+    "question": "여러 대의 컴퓨터를 연결하여 하나의 고성능 슈퍼컴퓨터처럼 과학 계산 등을 수행하게 하는 클러스터 시스템은? (예: 베어울프 클러스터)",
+    "answer": "고계산용 클러스터(HPC)"
+  },
+  {
+    "question": "대규모 서비스에서 수많은 클라이언트의 요청을 여러 대의 서버로 분산시켜 처리 속도를 높이는 클러스터 시스템은?",
+    "answer": "부하 분산 클러스터(LVS)"
+  },
+  {
+    "question": "특정 서버에 장애가 발생해도 예비 서버가 즉시 서비스를 이어받아 서비스의 중단(Down)을 방지하는 지속성 클러스터 시스템은?",
+    "answer": "고가용성 클러스터(HA)"
+  },
+  {
+    "question": "반가상화 및 전가상화를 모두 지원하며 영국 캠브리지 대학교에서 시작된 오픈소스 가상화 소프트웨어는?",
+    "answer": "Xen"
+  },
+  {
+    "question": "리눅스 커널에 모듈 형태로 탑재되어 하드웨어를 전가상화하는 오픈소스 가상화 소프트웨어는?",
+    "answer": "KVM"
+  },
+  {
+    "question": "오라클(Oracle)에서 개발한 전가상화 기반의 오픈소스 데스크톱 가상화 소프트웨어는?",
+    "answer": "VirtualBox"
+  },
+  {
+    "question": "현재의 ICANN이 등장하기 이전에 전 세계의 IP 주소 및 도메인을 관리했던 기관의 이름은?",
+    "answer": "IANA"
+  },
+  {
+    "question": "스위스 제네바에 본부를 둔 국제적인 표준화 기구로, OSI 7계층 모델을 제정한 곳은?",
+    "answer": "ISO"
+  },
+  {
+    "question": "과거 국제 전신전화 자문위원회라 불렸으며, 현재는 ITU-T로 개편된 기관의 구 명칭은?",
+    "answer": "CCITT"
+  },
+  {
+    "question": "국제 전기통신연합의 산하 기관으로, 전 세계 통신 분야의 기술 표준을 책정하는 부문은?",
+    "answer": "ITU-T"
+  },
+  {
+    "question": "전기공학과 전자공학 분야의 국제적 전문가 단체로, LAN 관련 표준(802 시리즈 등)을 제정한 곳은?",
+    "answer": "IEEE"
+  },
+  {
+    "question": "미국의 통신 분야 기업 협회로, 네트워크 케이블이나 통신 관련 규격 표준을 제정하는 단체는?",
+    "answer": "TIA"
+  },
+  {
+    "question": "사용자 컴퓨터에서 메일 서버로, 또는 메일 서버 간에 편지(메시지)를 교환할 때 사용하는 프로토콜은?",
+    "answer": "SMTP"
+  },
+  {
+    "question": "수신자가 메일 서버에 도착한 메일을 확인하기 위해 사용하는 대표적인 수신용 프로토콜 두 가지는? (콤마로 구분)",
+    "answer": "POP3, IMAP4"
+  },
+  {
+    "question": "텍스트 위주의 메일 전송 한계를 극복하기 위해 그림, 동영상 등 멀티미디어 데이터를 메일로 전송할 수 있게 만든 SMTP의 확장 표준은?",
+    "answer": "MIME"
+  },
+  {
+    "question": "X.25, Frame-Relay, ATM 기술 등이 대표적으로 사용하는 네트워크 통신 교환 방식은?",
+    "answer": "패킷교환"
+  },
+  {
+    "question": "HDLC, PPP 프로토콜 등이 대표적으로 사용하는, 통신 양단 간에 물리적 경로를 미리 확보하고 데이터를 전송하는 교환 방식은?",
+    "answer": "회선교환"
+  },
+  {
+    "question": "ls 명령어에서 숨김 파일(이름 앞에 '.'이 붙은 파일)을 포함하여 모든 파일을 출력하는 옵션은?",
+    "answer": "-a"
+  },
+  {
+    "question": "ls 명령어에서 파일이나 디렉터리의 속성 정보(권한, 소유자, 크기 등)를 포함하여 자세히 출력하는 옵션은?",
+    "answer": "-l"
+  },
+  {
+    "question": "ls 명령어에서 파일이나 디렉터리의 용량을 사람이 읽기 쉽게(KB, MB, GB 등) 정리해서 출력하는 옵션은?",
+    "answer": "-h"
+  },
+  {
+    "question": "ls 명령어에서 리눅스가 파일이나 디렉터리를 관리하기 위해 부여하는 고유 번호인 'inode' 번호를 함께 출력하는 옵션은?",
+    "answer": "-i"
+  },
+  {
+    "question": "ls 명령어에서 현재 디렉터리뿐만 아니라 하위 디렉터리의 목록까지 모두 출력하는 옵션은?",
+    "answer": "-R"
+  },
+  {
+    "question": "파일 시스템을 특정 디렉터리에 마운트하는 기본 명령어는?",
+    "answer": "mount"
+  },
+  {
+    "question": "마운트된 파일 시스템을 해제하는 명령어는?",
+    "answer": "umount"
+  },
+  {
+    "question": "mount 명령어에서 파일 시스템 타입을 지정하는 옵션은?",
+    "answer": "-t"
+  },
+  {
+    "question": "mount 명령어에서 마운트 옵션(예: ro, rw 등)을 지정하는 옵션은?",
+    "answer": "-o"
+  },
+  {
+    "question": "/etc/fstab의 1~6번째 필드 순서는? (장치, 마운트포인트, 타입, 옵션, 덤프, fsck순서)",
+    "answer": "device mountpoint fstype options dump pass"
+  },
+  {
+    "question": "현재 마운트된 파일 시스템 목록을 확인하는 명령어는?",
+    "answer": "mount"
+  },
+  {
+    "question": "특정 디바이스(/dev/sdb1)를 /mnt에 ext4로 마운트하는 예시는? (명령어)",
+    "answer": "mount -t ext4 /dev/sdb1 /mnt"
+  },
+  {
+    "question": "읽기 전용(ro)으로 /dev/sdb1을 /mnt에 마운트하는 예시는? (명령어)",
+    "answer": "mount -o ro /dev/sdb1 /mnt"
+  },
+  {
+    "question": "마운트 해제 시, 마운트포인트(/mnt)를 기준으로 해제하는 명령어 예시는?",
+    "answer": "umount /mnt"
+  },
+  {
+    "question": "마운트 해제 시, 디바이스(/dev/sdb1)를 기준으로 해제하는 명령어 예시는?",
+    "answer": "umount /dev/sdb1"
+  },
+  {
+    "question": "현재 셸에서 백그라운드 작업 목록을 확인하는 명령어는?",
+    "answer": "jobs"
+  },
+  {
+    "question": "실행 중인 프로세스 목록을 BSD 스타일로 출력하는 대표 명령어는?",
+    "answer": "ps aux"
+  },
+  {
+    "question": "실행 중인 프로세스 목록을 System V 스타일로 출력하는 대표 명령어는?",
+    "answer": "ps -ef"
+  },
+  {
+    "question": "프로세스 우선순위(니스 값)를 지정하여 실행하는 명령어는?",
+    "answer": "nice"
+  },
+  {
+    "question": "실행 중인 프로세스의 우선순위(니스 값)를 변경하는 명령어는?",
+    "answer": "renice"
+  },
+  {
+    "question": "백그라운드로 프로그램을 실행시키는 기호는?",
+    "answer": "&"
+  },
+  {
+    "question": "프로세스 ID(PID)로 프로세스를 강제 종료하는 예시는? (SIGKILL)",
+    "answer": "kill -9 PID"
+  },
+  {
+    "question": "메모리 사용량을 확인하는 명령어는?",
+    "answer": "free"
+  },
+  {
+    "question": "메모리 사용량을 사람이 읽기 쉽게 출력하는 옵션은? (free)",
+    "answer": "-h"
+  },
+  {
+    "question": "시스템이 부팅된 후 경과 시간과 평균 부하를 보여주는 명령어는?",
+    "answer": "uptime"
+  },
+  {
+    "question": "systemd 환경에서 서비스 상태를 확인하는 대표 명령어는? (예: sshd)",
+    "answer": "systemctl status sshd"
+  },
+  {
+    "question": "systemd 환경에서 서비스를 시작하는 명령어는? (예: sshd)",
+    "answer": "systemctl start sshd"
+  },
+  {
+    "question": "systemd 환경에서 서비스를 중지하는 명령어는? (예: sshd)",
+    "answer": "systemctl stop sshd"
+  },
+  {
+    "question": "부팅 시 서비스 자동 시작을 설정하는 명령어는? (예: sshd)",
+    "answer": "systemctl enable sshd"
+  },
+  {
+    "question": "부팅 시 서비스 자동 시작을 해제하는 명령어는? (예: sshd)",
+    "answer": "systemctl disable sshd"
+  },
+  {
+    "question": "systemd 로그(저널)를 확인하는 명령어는?",
+    "answer": "journalctl"
+  },
+  {
+    "question": "특정 서비스(예: sshd)의 저널 로그만 보는 예시는?",
+    "answer": "journalctl -u sshd"
+  },
+  {
+    "question": "네트워크 인터페이스의 IP 정보를 확인/설정하는 최신 명령어는? (ip 기반)",
+    "answer": "ip addr"
+  },
+  {
+    "question": "라우팅 테이블을 확인하는 최신 명령어는? (ip 기반)",
+    "answer": "ip route"
+  },
+  {
+    "question": "네트워크 인터페이스 링크 상태를 확인/설정하는 최신 명령어는? (ip 기반)",
+    "answer": "ip link"
+  },
+  {
+    "question": "해당 호스트로 ICMP 에코를 보내 네트워크 연결을 확인하는 명령어는?",
+    "answer": "ping"
+  },
+  {
+    "question": "ping 명령어에서 요청 횟수를 지정하는 옵션은?",
+    "answer": "-c"
+  },
+  {
+    "question": "열려 있는 포트/리스닝 소켓을 확인하는 대표 명령어(신형)는?",
+    "answer": "ss"
+  },
+  {
+    "question": "TCP/UDP 리스닝 포트와 PID까지 확인하는 ss 옵션 조합은? (자주 쓰는 형태)",
+    "answer": "ss -tulnp"
+  },
+  {
+    "question": "구형 도구로 네트워크 연결/포트를 확인하는 명령어는?",
+    "answer": "netstat"
+  },
+  {
+    "question": "TCP/UDP 리스닝 포트와 PID까지 확인하는 netstat 옵션 조합은?",
+    "answer": "netstat -tulnp"
+  },
+  {
+    "question": "도메인 이름의 DNS 레코드를 조회하는 대표 명령어(1)는?",
+    "answer": "dig"
+  },
+  {
+    "question": "도메인 이름을 DNS에 질의해 IP를 확인하는 대표 명령어(2)는?",
+    "answer": "nslookup"
+  },
+  {
+    "question": "목적지까지의 네트워크 경로(홉)를 추적하는 명령어는?",
+    "answer": "traceroute"
+  },
+  {
+    "question": "원격 서버에 안전하게 파일을 복사하는 명령어는?",
+    "answer": "scp"
+  },
+  {
+    "question": "원격 서버에 SSH로 접속할 때 포트 번호를 지정하는 옵션은?",
+    "answer": "-p"
+  },
+  {
+    "question": "웹에서 파일을 다운로드하는 대표 명령어(1)는?",
+    "answer": "wget"
+  },
+  {
+    "question": "URL로 HTTP 요청을 보내고 응답을 확인하는 대표 명령어(2)는?",
+    "answer": "curl"
+  },
+  {
+    "question": "MAC 주소/IP 매핑(이웃 캐시)을 확인하는 최신 명령어는? (ip 기반)",
+    "answer": "ip neigh"
+  },
+  {
+    "question": "crontab의 시간 필드 5개 순서는? (분 시 일 월 요일)",
+    "answer": "min hour dom month dow"
+  },
+  {
+    "question": "매일 오전 4시 30분에 실행하는 crontab 시간 표기법은?",
+    "answer": "30 4 * * *"
+  },
+  {
+    "question": "매주 월요일 오전 4시 정각에 실행하는 crontab 시간 표기법은?",
+    "answer": "0 4 * * 1"
+  },
+  {
+    "question": "파일 내용에서 특정 문자열을 검색하는 명령어는?",
+    "answer": "grep"
+  },
+  {
+    "question": "재귀적으로 디렉터리까지 포함해 문자열을 검색하는 grep 옵션은?",
+    "answer": "-R"
+  },
+  {
+    "question": "파일/디렉터리를 이름 기준으로 찾는 명령어는?",
+    "answer": "find"
+  },
+  {
+    "question": "파일의 처음 10줄을 출력하는 명령어는?",
+    "answer": "head"
+  },
+  {
+    "question": "파일의 마지막 10줄을 출력하는 명령어는?",
+    "answer": "tail"
+  },
+  {
+    "question": "로그를 실시간으로 따라가며 출력하는 tail 옵션은?",
+    "answer": "-f"
+  },
+  {
+    "question": "tar로 아카이브를 '생성(create)'할 때 사용하는 옵션 문자는?",
+    "answer": "c"
+  },
+  {
+    "question": "tar로 아카이브를 '해제(extract)'할 때 사용하는 옵션 문자는?",
+    "answer": "x"
+  },
+  {
+    "question": "tar에서 아카이브 파일 이름을 지정하는 옵션은?",
+    "answer": "f"
+  },
+  {
+    "question": "tar로 gzip 압축하여 backup.tar.gz를 만드는 예시는? (명령어)",
+    "answer": "tar czf backup.tar.gz backup"
+  },
+  {
+    "question": "tar.gz 파일을 현재 디렉터리에 해제하는 예시는? (명령어)",
+    "answer": "tar xzf backup.tar.gz"
+  }
+]
